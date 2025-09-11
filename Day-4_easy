@@ -1,0 +1,12 @@
+class Solution:
+    def gcd(self, a, b):
+        # code here
+        if a<=b:
+            temp=a
+            a=b
+            b=temp
+        while b!=0:
+          temp=a
+          a=b
+          b=temp%b
+        return a
